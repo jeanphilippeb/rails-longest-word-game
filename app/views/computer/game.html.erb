@@ -1,0 +1,8 @@
+<%= @grid %>
+
+<form action="/score">
+  <label for="question">Write a word</label>
+  <input type="text" name="attempt" placeholder="What is your best shot?">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="submit">
+</form>
